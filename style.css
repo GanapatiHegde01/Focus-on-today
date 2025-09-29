@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: rgb(233, 233, 233);
+}
+
+svg {
+    background: transparent;
+}
+
+.heading-section{
+    display: flex;
+    justify-content: center;
+    margin-top:1%;
+}
+
+.heading-section h1{
+    font-size: 60px;
+     font-family: Poppins;
+     font-weight: bold;
+}
+
+.heading-section  .green-text{
+   color:#48A300;
+}
+.heading-section  .brown-text{
+   color:rgb(113, 36, 41);
+}
+
+section .main{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+section .main .white-box{
+      position: absolute;
+    background-color: rgb(243, 243, 243);
+    height: auto;       
+    min-height: 100vh;  
+    width: 40%;
+    top: 20px;          
+    border-radius: 12px;
+    padding: 50px;  
+}
+
+section .main .white-box .today h1{
+   background-color: rgb(243, 243, 243);
+   font-family: Poppins;
+   font-weight: bolder;
+}
+
+section .main .white-box .today span{
+   background-color: rgb(243, 243, 243);
+}
+
+
+section .main .white-box  .text p{
+  background-color: rgb(243, 243, 243);
+  margin-top: 30px;
+  font-size: 17px;
+  font-family: Poppins;
+  color:rgb(123, 122, 122);
+}
+
+section .main .white-box .progress-bar{
+    margin-top: 20px;
+   border-radius: 20px; 
+   height: 30px;
+   width: 100%;
+   overflow: hidden;
+}
+
+section .main .white-box .progress-bar .bar{
+    width: 30%;
+    background-color:  #48A300;
+    height: 30px;
+    color: white;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    font-family: Poppins;
+}
+
+
+
+section .main .white-box .tasks{
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: rgb(243, 243, 243);
+}
+section .main .white-box .tasks p{
+    font-family: Poppins;
+    color:red;
+    background-color:rgb(243, 243, 243) ;
+}
+
+section .main .white-box .tasks .outer-box{
+    margin-top: 30px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 22px;
+    padding-right: 10px;
+    border:2px solid rgb(210, 210, 210);
+    border-radius: 20px;
+    background-color: rgb(243, 243, 243);
+    
+}
+section .main .white-box .tasks .outer-box .checkbox{
+    width: 24px;
+    height: 24px;
+    border:2px solid gray;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .main .white-box .tasks .outer-box .checkbox img{
+    width:11px;
+      background: transparent;
+      
+}
+section .main .white-box .tasks .outer-box input{
+    outline: none;
+    border:none;
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    align-self: stretch;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+section .quote{
+    display: flex;
+    justify-content: center;
+    font-family: Poppins;
+    font-weight: bold;
+    position: relative;
+}
+
+section .quote p{
+    position: absolute;
+    margin-top:54px;
+    background-color: rgb(243, 243, 243);
+}
+
+section .developer-name{
+   
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+    bottom: 10%;
+    margin-top: 130px;
+
+}
+
+
+section .developer-name p{
+     background-color: rgb(243, 243, 243);
+     color:gray;
+     font-family: Poppins;
+    
+}
+
+.completed .checkbox{
+    background-color: #48A300;
+
+}
+
+.completed input{
+    color: #48A300;
+    text-decoration: line-through;
+}
+
+.instruction{
+    display: none;
+}
+
+
+.completed svg path {
+    stroke: white;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width:640px){
+    section{
+        padding:10px;
+    }
+    
+section .main .white-box{
+      position: absolute;
+    background-color: rgb(243, 243, 243);
+    height: auto;       
+    min-height: 100vh;  
+    width: 90%;
+    top: 20px;          
+    border-radius: 12px;
+    padding: 50px;  
+}
+
+.heading-section h1{
+    font-size: 30px;
+     font-family: Poppins;
+     font-weight: bold;
+}
+section .main .white-box .progress-bar .bar{
+    font-size: 10px;
+}
+}
